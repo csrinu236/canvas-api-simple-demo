@@ -1,0 +1,49 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="section">
+      <div class="section-center canvas-center">
+        <div class="canvas-table">
+          <div class="form-control">
+            <input
+              type="radio"
+              checked
+              name="draw_type"
+              value="DRAW"
+              id="draw"
+            />
+            <label for="draw">Draw</label>
+            <br />
+            <input
+              type="radio"
+              name="draw_type"
+              value="RECTANGLE"
+              id="rectangle"
+            />
+            <label for="rectangle">Rectangle</label>
+          </div>
+          <div class="form-control thickness-control">
+            <label for="thickness">Thickness: </label>
+            <input type="number" value="1" />
+          </div>
+          <div class="form-control color-control">
+            <label for="colorpicker">Color Picker:</label>
+            <input type="color" id="colorpicker" value="#000" />
+          </div>
+          <button class="btn erase-btn">Erase</button>
+        </div>
+        <div class="canvasWrapper">
+          <canvas id="canvasMain"></canvas>
+          <canvas id="canvasOverlay"></canvas>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
